@@ -1,0 +1,105 @@
+<!-- Lesson 1: Assignments | CSS Fundamentals
+
+1.  Enhancing CSS Styling of Chocolate Chip Cookie Recipe
+Objective: The aim of this assignment is to apply CSS styling to your chocolate chip cookie recipe, utilizing various selectors, 
+text and font styling, color, and the CSS box model to enhance its appearance.
+
+Task 1: Use CSS to style the chocolate chip cookie recipe according to the following requirements:
+
+- Apply different font families, sizes, and styles to the recipe title, ingredients, and steps.
+- Set the background color of the header and footer.
+- Add padding and margin to elements to enhance spacing and layout.
+- Create a border around the recipe to separate it from the rest of the page.
+- Use different colors for text and background to improve readability.
+- Apply hover effects to links within the recipe, such as the recipe source link.
+- Utilize class, id, and at least 1 combinator selector when styling your CSS.
+
+Expected Outcome: Utilize fundamental CSS properties to style recipe and enhance its appearance. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="This is my first homework!">
+    <meta name="keywords" content="HTML, Web Development, Frontend Engineering">
+    <meta name="author" content="Victor Bondaruk">
+    <title>Recipe</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <p>Free Standard Shipping on Orders $75+</p>
+        </div>
+        <div>
+            <a href="./recipe.html"><button class="add-recipe">Add Recipe</button></a>
+        </div>
+        <div class="header-right">
+            <a href="./trackorder.html"><button class="track-order">Track Order</button></a>
+        </div>
+    </header>
+    <main class="cookies">
+        <div class="content-container">
+            <h1>Classic Chocolate Chip Cookies</h1>
+            <h3 class="follow">Follow our simple steps to create a cookie that turns out perfectly every single time!
+            </h3>
+            <img src="https://joyfoodsunshine.com/wp-content/uploads/2018/02/best-chocolate-chip-cookies-recipe-1.jpg"
+                alt="Cookies">
+            <div class="ingredients-container">
+                <h3 class="ingredients">Ingredients:</h3>
+                <ul>
+                    <li>1 cup (2 sticks) unsalted butter, softened</li>
+                    <li>3/4 cup granulated sugar</li>
+                    <li>3/4 cup packed brown sugar</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>2 large eggs</li>
+                    <li>2 1/4 cups all-purpose flour</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>2 cups semisweet chocolate chips</li>
+                    <li>1 cup chopped nuts (optional)</li>
+                </ul>
+            </div>
+            <div class="steps-container">
+                <h3 class="steps">Steps:</h3>
+                <ol>
+                    <li>Preheat the oven to 375°F (190°C). Line baking sheets with parchment paper or silicone baking
+                        mats.</li>
+                    <li>In a large mixing bowl, cream together the softened butter, granulated sugar, brown sugar, and
+                        vanilla extract until light and fluffy.</li>
+                    <li>Add the eggs, one at a time, beating well after each addition.</li>
+                    <li>In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry
+                        ingredients to the wet ingredients, mixing until just combined.</li>
+                    <li>Stir in the chocolate chips and chopped nuts (if using) until evenly distributed throughout the
+                        dough.</li>
+                    <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches
+                        apart.</li>
+                    <li>Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown.</li>
+                    <li>Remove from the oven and allow the cookies to cool on the baking sheets for a few minutes before
+                        transferring them to wire racks to cool completely.</li>
+                </ol>
+            </div>
+            <div id="para1">
+                <p>Don't forget to enjoy your Classic Chocolate Chip Cookies with a tall glass of milk &ndash; the
+                    perfect combination!</p>
+            </div>
+            <h4><strong>Read more here:</strong>
+                <a id="Cookies" href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016"
+                    target="_blank">Classic Chocolate Chip Cookies</a>
+            </h4>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2024 Victor Bondaruk. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

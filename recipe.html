@@ -1,0 +1,57 @@
+<!-- Lesson 1: Assignments | CSS Fundamentals
+    
+2. Assignment: Creating a Recipe Submission Button and Styled Form
+
+Task 1: Add a button that links to a separate page for recipe submission. Include elements such as <button> with appropriate 
+attributes and an anchor tag <a> to link to the submission page.
+
+Expected Outcome: Utilize button and anchor tag elements to the page to allow users to navigate to another page for additional functionality.
+
+Task 2: Use CSS to style the button with hover effects using pseudo-classes (:hover). Ensure that the button stands out and invites users to click.
+
+Expected Outcome: Apply CSS pseudo-class styling to add visual appeal and provide additional queues to users.
+
+Task 3: Create a separate HTML file for the recipe submission form. Include form elements such as <form>, <input> fields for recipe name, 
+ingredients, and instructions, and a submit button <button>.
+
+Expected Outcome: Utilize CSS elements for building forms to allow users to submit multiple data to forms. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Recipe Form</title>
+</head>
+
+<body class="recipe-body">
+    <main class="recipe-main">
+        <section id="your-form">
+            <div>
+                <h3>Your Recipe</h3>
+                <p>Please provide your recipe name, ingredients and instructions</p>
+            </div>
+            <form onSubmit="handlesubmit">
+                <label for="recipe-name">Name</label>
+                <input type="text" id="recipe-name" name="recipe-name" placeholder="e.g. Chip Chocolate Cookies"
+                    required>
+                <div role="alert" aria-live="assertive"></div>
+
+                <label for="ingredients">Ingredients</label>
+                <input type="text" id="ingredients" name="ingredients" placeholder="List all required ingredients"
+                    required>
+                <div role="alert" aria-live="assertive"></div>
+
+                <label for="instructions">Instructions</label>
+                <input type="text" id="instructions" name="instructions" placeholder="Provide step-by-step instructions"
+                    required>
+                <div role="alert" aria-live="assertive"></div>
+                <button type="submit">Add Your Recipe</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
